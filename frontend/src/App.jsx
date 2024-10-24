@@ -16,15 +16,10 @@ function App() {
     <Router>
       <div>
         <h1>Form</h1>
-        <nav>
-                    <Link to="/register">Register</Link>
-                    <Link to="/login">Login</Link>
-                    <Link to="/userdetails">User Details</Link>
-                    <Link to="/dashboard">Dashboard</Link>
-                </nav>
+       
         <Routes>
           <Route path="/register" element={<Registerform />} />
-          <Route path="/" element={<Navigate to="/register" />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/login" element={<Loginform />} />
           <Route path="/userdetails" element={<Userdetails />} />
         </Routes>
