@@ -43,7 +43,7 @@ const Registerform=()=>{
         console.log("Sending files to backend...");
         // const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
-          const res=await axios.post('https://form-backend-pagn.onrender.com/register',{username,email,password,confirmpassword},{
+          const res=await axios.post('http://localhost:5003/register',{username,email,password,confirmpassword},{
               headers:{
                 'Content-Type': 'application/json',
               }

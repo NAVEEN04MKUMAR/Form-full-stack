@@ -63,7 +63,7 @@ const Userdetails=()=>{
         console.log("Sending files to backend...");
         // const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
-          const res=await axios.put('https://form-backend-pagn.onrender.com/modifydetails',userinfo,{
+          const res=await axios.put('http://localhost:5003/modifydetails',userinfo,{
             headers: { Authorization: token },
           });
           console.log('modiyu user details response',res.data)
